@@ -9,6 +9,6 @@ Timer.periodic(const Duration(seconds: 2), (_) => getValue());
 ```
 
 ## Abordagens
-### setState [Implementação](https://github.com/crispim1411/state_management/tree/master/lib/setState)
+### setState ([Implementação](https://github.com/crispim1411/state_management/tree/master/lib/setState))
 
 A lógica do elemento encontra total ou parcialmente dentro da implementação da interface. 
