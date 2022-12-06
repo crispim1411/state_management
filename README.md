@@ -11,4 +11,14 @@ Timer.periodic(const Duration(seconds: 2), (_) => getValue());
 ## Abordagens
 ### setState ([Implementação](https://github.com/crispim1411/state_management/tree/master/lib/setState))
 
-A lógica do elemento encontra total ou parcialmente dentro da implementação da interface. 
+A lógica do elemento encontra total ou parcialmente dentro da implementação da interface. A classe precisa herdar de StatefulWidget para guardar e modificar o estado.
+
+```dart 
+String screenValue = 'loading...';
+...
+Text(screenValue)
+...
+setState(() {
+  screenValue = value;
+});
+```
