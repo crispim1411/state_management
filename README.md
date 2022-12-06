@@ -5,7 +5,7 @@ As implementações foram separadas na estrutura do aplicativo por rotas.
 
 Os dados são requisitados de uma api pública que serve números randômicos. O objetivo é ter chamadas regulares atualizando o valor na tela. Utilizando **Time.periodic**
 ```
-Timer.periodic(const Duration(seconds: 2), getValue());
+Timer.periodic(const Duration(seconds: 2), (_) => getValue());
 ```
 
 ## Abordagens
