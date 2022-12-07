@@ -7,18 +7,23 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          _createRow(context, 'setState'),
+          _createRow(context, 'provider'),
+        ],
+      )
+    );
+  }
+
+  _createRow(context, route) {
+    return GestureDetector(
+      onTap: () => Navigator.pushNamed(context, "/$route"),
+      child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              const Text('setState Approach'), 
-              IconButton(
-                onPressed: () => Navigator.pushNamed(context, '/setState'), 
-                icon: const Icon(Icons.arrow_forward)
-              )
-            ],
-          )
+          Text("$route Approach", style: const TextStyle(fontSize: 18)), 
+          const Icon(Icons.arrow_forward)
         ],
       )
     );

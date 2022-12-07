@@ -18,7 +18,7 @@ class _SetStateScreenState extends State<SetStateScreen> {
   @override
   void initState() {
     super.initState();
-    _timer = Timer.periodic(const Duration(seconds: 2), (_) => getValue());
+    _timer = Timer.periodic(Config.intervalRefresh, (_) => getValue());
   }
 
   @override
