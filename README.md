@@ -1,11 +1,10 @@
 # Gerenciamento de Estados no Flutter
-Aplicação feita em Flutter implementando diversas abordagens para gerenciamento de estados. 
-Entre eles, setState, Provider, BLoC,... (incluir conforme for implementando)
+Aplicação feita para estudo das diversas abordagens para gerenciamento de estados do Flutter.
 As implementações foram separadas na estrutura do aplicativo por rotas.
 
-Os dados são requisitados de uma api pública que serve números randômicos. O objetivo é ter chamadas regulares atualizando o valor na tela. Utilizando **Time.periodic**
+Os dados são requisitados de uma api pública (www.randomnumberapi.com) que serve números randômicos. O objetivo é ter chamadas regulares atualizando o valor na tela utilizando **Time.periodic**
 ```
-Timer.periodic(const Duration(seconds: 2), (_) => getValue());
+Timer.periodic(duration, callback);
 ```
 
 ## Abordagens
