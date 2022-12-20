@@ -11,6 +11,7 @@ class HomeScreen extends StatelessWidget {
         children: [
           _createRow(context, 'setState'),
           _createRow(context, 'provider'),
+          _createRow(context, 'bloc_raw'),
         ],
       )
     );

@@ -1,3 +1,4 @@
+import 'package:api_req_flutter/bloc_raw/bloc_screen.dart';
 import 'package:api_req_flutter/provider/api_provider.dart';
 import 'package:api_req_flutter/setState/setstate_screen.dart';
 import 'package:flutter/material.dart';
@@ -24,7 +25,8 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => const HomeScreen(),
         '/setState': (context) => const SetStateScreen(),
-        '/provider': (context) => const ProviderScreen()
+        '/provider': (context) => const ProviderScreen(),
+        '/bloc_raw': (context) => const BlocRawScreen(),
       }
     );
   }

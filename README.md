@@ -47,3 +47,6 @@ void main() {
   );
 }
 ```
+
+### BLoC
+Consiste num design responsável por gerenciar uma estrutura de estados e uma estrutura de eventos isolando a lógica da tela.
